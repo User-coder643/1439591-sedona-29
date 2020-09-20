@@ -1,0 +1,217 @@
+/* Variables */
+
+:root {
+  --basic-black: #000000;
+  --basic-gray:  #333333;
+  --basic-blue:  #81B3D2;
+  --basic-white: #ffffff;
+  --basic-light-gray: #EEEEEE;
+
+  --basic-extra-dark: #242424;
+  --basic-dark: #aba9a7;
+  --basic-neutral: #e5e5e5;
+  --basic-extra-light: #f8f5f2;
+
+  --special: #663d15;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-navigation {
+  font-size: 14px;
+  line-height: 26px;
+  color: var(--basic-black);
+  background-color: transparent;
+}
+
+nav {
+font-family: 'PT Sans';
+}
+
+ul {
+	list-style: none;
+    padding: 0; /* Убираем поля */
+    margin-left: 0px; /* Отступ слева */
+	margin-top: 0; /* Отступ сверху */
+    margin-bottom: 0; /* Отступ снизу */
+}
+
+.suggest-list {
+	list-style: none;
+    padding: 0; /* Убираем поля */
+    margin-left: 0px; /* Отступ слева */
+	margin-top: 0; /* Отступ сверху */
+    margin-bottom: 0; /* Отступ снизу */	
+}
+
+.site-navigation {
+}
+
+.site-navigation a {
+  color: var(--basic-black);
+}
+
+.page-body {
+  background-color: ;
+  font-family: "PT Sans";
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  color: var(--basic-black);
+  text-transform: uppercase;
+}
+.container {
+	background-color: ;		
+}
+
+.site-title {
+  font-family: "PT Sans";
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: var(--basic-black);
+  text-transform: uppercase;	
+  text-align: center;
+}
+
+.five-reson-text {
+  font-family: "PT Sans";
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  color: var(--basic-gray);
+  text-transform: uppercase;
+
+  text-align: center;	
+}
+
+.features-list {
+	background-color: ;
+}
+
+.feature-item {
+  text-align: center;
+}
+
+.blue-box {
+  color:            var(--basic-white);	
+  background-color: var(--basic-blue);
+  width:  400px;
+  height: 256px;
+  text-align: center;
+}
+.blue-box-title {
+	font-family: PT Sans;
+	font-size: 21px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 21px;
+	letter-spacing: 0px;
+	text-align: center;
+}
+.blue-box-text {
+	font-family: PT Sans;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 21px;
+	letter-spacing: 0px;
+	text-align: center;
+}
+.suggest-item {
+	
+}
+.suggest-box {
+	color:            var(--basic-black);	
+	background-color: var(--basic-white);	
+//	height: 256px;	
+	width:  400px;
+	text-align: center;	
+}
+.suggest-box-title {
+	font-family: PT Sans;
+	font-size: 21px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 21px;
+	letter-spacing: 0px;
+	text-align: center;
+	
+}
+.suggest-box-text {
+	font-family: PT Sans;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 21px;
+	letter-spacing: 0px;
+	text-align: center;
+}
+
+.gray-box {
+	color:            var(--basic-black);	
+	background-color: var(--basic-light-gray);		height: 256px;	
+	width:  400px;
+	text-align: center;	
+}
+.gray-box-title {
+	font-family: PT Sans;
+	font-size: 21px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 21px;
+	letter-spacing: 0px;
+	text-align: center;
+	
+}
+.gray-box-text {
+	font-family: PT Sans;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 21px;
+	letter-spacing: 0px;
+	text-align: center;
+}
+
+.app-title {
+	font-family: PT Sans;
+	font-size: 30px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 24px;
+	letter-spacing: 0px;
+	text-transform: uppercase;	
+	text-align: center;
+}
+.appointment-info {
+	font-family: PT Sans;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 24px;
+	letter-spacing: 0px;
+	text-transform: uppercase;	
+	text-align: center;
+}
+.contacts {
+	font-family: PT Sans;
+	font-size: 21px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 26px;
+	letter-spacing: 0px;
+	color: var(--basic-black);		
+}
+.copyright{
+	font-family: PT Sans;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 26px;
+	letter-spacing: 0px;
+	text-align: center;
+	color:  var(--basic-black);		
+}
