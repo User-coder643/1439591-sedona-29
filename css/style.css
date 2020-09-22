@@ -1,33 +1,97 @@
-/* Variables */
+/* cyrillic-ext */
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('PT Sans'), local('PTSans-Regular'), url(https://fonts.gstatic.com/s/ptsans/v12/jizaRExUiTo99u79D0-ExdGM.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('PT Sans'), local('PTSans-Regular'), url(https://fonts.gstatic.com/s/ptsans/v12/jizaRExUiTo99u79D0aExdGM.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('PT Sans'), local('PTSans-Regular'), url(https://fonts.gstatic.com/s/ptsans/v12/jizaRExUiTo99u79D0yExdGM.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('PT Sans'), local('PTSans-Regular'), url(https://fonts.gstatic.com/s/ptsans/v12/jizaRExUiTo99u79D0KExQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('PT Sans Bold'), local('PTSans-Bold'), url(https://fonts.gstatic.com/s/ptsans/v12/jizfRExUiTo99u79B_mh0OOtLQ0Z.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('PT Sans Bold'), local('PTSans-Bold'), url(https://fonts.gstatic.com/s/ptsans/v12/jizfRExUiTo99u79B_mh0OqtLQ0Z.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('PT Sans Bold'), local('PTSans-Bold'), url(https://fonts.gstatic.com/s/ptsans/v12/jizfRExUiTo99u79B_mh0OCtLQ0Z.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('PT Sans Bold'), local('PTSans-Bold'), url(https://fonts.gstatic.com/s/ptsans/v12/jizfRExUiTo99u79B_mh0O6tLQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
 
+/* Осуществить разделение блоков комментариями для облегчения выполнения,
+чтоб не запутаться во множестве блоков*/
+
+/* Variables */
 :root {
   --basic-black: #000000;
   --basic-gray:  #333333;
   --basic-blue:  #81B3D2;
   --basic-white: #ffffff;
   --basic-light-gray: #EEEEEE;
+}
 
-  --basic-extra-dark: #242424;
-  --basic-dark: #aba9a7;
-  --basic-neutral: #e5e5e5;
-  --basic-extra-light: #f8f5f2;
-
-  --special: #663d15;
+.page-body {
+	font-family: "PT Sans";
+  	color: var(--basic-black);
+  	text-transform: uppercase;
+	line-height: 1.5;
 }
 
 a {
-  text-decoration: none;
+  	text-decoration: none;
 }
 
 .main-navigation {
-  font-size: 14px;
-  line-height: 26px;
-  color: var(--basic-black);
-  background-color: transparent;
 }
 
 nav {
-font-family: 'PT Sans';
+}
+.container {
 }
 
 ul {
@@ -50,73 +114,55 @@ ul {
 }
 
 .site-navigation a {
-  color: var(--basic-black);
+  	font-size: 14px;
+  	/*line-height: 26px;*/
+	color: inherit;
+  	background-color: transparent;
+	font-weight: 700;	
 }
-
-.page-body {
-  background-color: ;
-  font-family: "PT Sans";
-  font-size: 14px;
-  line-height: 24px;
-  font-weight: 700;
-  color: var(--basic-black);
-  text-transform: uppercase;
-}
-.container {
-	background-color: ;		
-}
-
 .site-title {
-  font-family: "PT Sans";
-  font-size: 21px;
-  line-height: 26px;
-  font-weight: 700;
-  color: var(--basic-black);
-  text-transform: uppercase;	
-  text-align: center;
+  	font-size: 21px;
+  	line-height: 1.2; /*26px;*/
+  	font-weight: 700;
+  	text-align: center; 
 }
 
 .five-reson-text {
-  font-family: "PT Sans";
-  font-size: 14px;
-  line-height: 26px;
-  font-weight: 400;
-  color: var(--basic-gray);
-  text-transform: uppercase;
-
-  text-align: center;	
+  	font-size: 14px;
+  	/* line-height: 26px; */
+  	font-weight: 400;
+  	color: var(--basic-gray);
+  	text-align: center;	
 }
 
 .features-list {
-	background-color: ;
+  	
 }
 
 .feature-item {
-  text-align: center;
+  	text-align: center;
 }
 
-.blue-box {
-  color:            var(--basic-white);	
-  background-color: var(--basic-blue);
-  width:  400px;
-  height: 256px;
-  text-align: center;
+.reason12-box {
+  	color:            var(--basic-white);	
+  	background-color: var(--basic-blue);
+  	width:  400px;
+  	height: 256px;
+  	text-align: center;
 }
-.blue-box-title {
-	font-family: PT Sans;
+.reason12-box-title {
 	font-size: 21px;
 	font-style: normal;
 	font-weight: 700;
-	line-height: 21px;
+	line-height: 1; /*21px;*/
 	letter-spacing: 0px;
 	text-align: center;
 }
-.blue-box-text {
-	font-family: PT Sans;
+.reason12-box-text {
 	font-size: 14px;
 	font-style: normal;
 	font-weight: 400;
-	line-height: 21px;
+	/*line-height: 1.5; 21px;*/
 	letter-spacing: 0px;
 	text-align: center;
 }
@@ -126,92 +172,78 @@ ul {
 .suggest-box {
 	color:            var(--basic-black);	
 	background-color: var(--basic-white);	
-//	height: 256px;	
 	width:  400px;
 	text-align: center;	
 }
 .suggest-box-title {
-	font-family: PT Sans;
 	font-size: 21px;
 	font-style: normal;
 	font-weight: 700;
-	line-height: 21px;
+	line-height: 1; /*21px;*/
 	letter-spacing: 0px;
 	text-align: center;
-	
 }
 .suggest-box-text {
-	font-family: PT Sans;
 	font-size: 14px;
 	font-style: normal;
 	font-weight: 400;
-	line-height: 21px;
+	/*line-height: 1.5; 21px;*/
 	letter-spacing: 0px;
 	text-align: center;
 }
 
-.gray-box {
-	color:            var(--basic-black);	
+.reason345-box {
 	background-color: var(--basic-light-gray);		height: 256px;	
 	width:  400px;
 	text-align: center;	
 }
-.gray-box-title {
-	font-family: PT Sans;
+.reason345-box-title {
 	font-size: 21px;
 	font-style: normal;
 	font-weight: 700;
-	line-height: 21px;
+	line-height: 1;  /*21px;*/
 	letter-spacing: 0px;
 	text-align: center;
 	
 }
-.gray-box-text {
-	font-family: PT Sans;
+.reason345-box-text {
 	font-size: 14px;
 	font-style: normal;
 	font-weight: 400;
-	line-height: 21px;
+	/*line-height: 1.5;  21px;*/
 	letter-spacing: 0px;
 	text-align: center;
 }
 
 .app-title {
-	font-family: PT Sans;
 	font-size: 30px;
 	font-style: normal;
 	font-weight: 700;
-	line-height: 24px;
+	line-height: 1;  /*24px;*/
 	letter-spacing: 0px;
-	text-transform: uppercase;	
 	text-align: center;
 }
 .appointment-info {
-	font-family: PT Sans;
 	font-size: 14px;
 	font-style: normal;
 	font-weight: 400;
-	line-height: 24px;
+	/*line-height: 1.5  24px;*/
 	letter-spacing: 0px;
-	text-transform: uppercase;	
 	text-align: center;
 }
 .contacts {
-	font-family: PT Sans;
 	font-size: 21px;
 	font-style: normal;
 	font-weight: 700;
-	line-height: 26px;
+	line-height: 1.2; /*26px;*/
 	letter-spacing: 0px;
-	color: var(--basic-black);		
+	color: inherit;
 }
 .copyright{
-	font-family: PT Sans;
 	font-size: 14px;
 	font-style: normal;
 	font-weight: 400;
-	line-height: 26px;
+	line-height: 1.5; /*26px;*/
 	letter-spacing: 0px;
 	text-align: center;
-	color:  var(--basic-black);		
 }
