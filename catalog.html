@@ -3,40 +3,62 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+	
+	<link href="css/normalize.css" rel="stylesheet" type="text/css">
+	<link href="css/style.css" 	   rel="stylesheet" type="text/css">
   </head>
-  <body>
+  <body class="page-body">
 
-	<header>
-		<a href="index.html">
+	<header class="main-header">
+		<a class="main-header-logo" href="index.html">
            <img src="img/logo.png" width="138" height="70" alt="Логотип Седоны">
         </a>
-		<nav class="main-menu">
-			<ul>
+		<nav class="main-navigation container">
+		
+			<ul class="site-navigation">
 				<li><a href="#">	Информация</a></li>
 				<li><a href="#">	Фото и видео</a></li>
 				<li><a href="#">		Карта штата</a></li>
-				<li><a href="catalog.html">	Гостиницы</a></li>
+				<li class='nav-selected'><a href="catalog.html">	Гостиницы</a></li>
+				
+				<!-- <div class="site-navigation-current"><div>  - судя по образцу, 
+				этот класс тоже подходит - можно либо заменить, либо сделать 2 класса. -->
 			</ul>
 		</nav>		
 	</header>
 	
+	<main class="page-catalog container">
+	
+	<!-- <div class="page-title"></div>  - не ясно, куда этот класс добавить, 
+	хотя по сути он подходит -->
+	
 	<!-- search filter - фильтр по найденным гостиницам -->		
-	<section>	
+	<section class="filters">	
 		<ul>
 			<li>
 				<ul>
-					<li><h3>Инфраструктура</h3></li>
-					<li>Бассейн</li>
-					<li>Парковка</li>
-					<li>Wi-fi</li>
+					<li><h3 class="visually-hidden">Инфраструктура</h3></li>
+					<li class="filter-option filter-checkbox">Бассейн</li>
+					<input class="visually-hidden filter-input-checkbox" type="checkbox" name="Бассейн" checked>
+					
+					<li class="filter-option filter-checkbox">Парковка</li>
+					<input class="visually-hidden filter-input-checkbox" type="checkbox" name="Парковка">
+					
+					<li class="filter-option filter-checkbox">Wi-fi</li>
+					<input class="visually-hidden filter-input-checkbox" type="checkbox" name="Wi-fi">
 				</ul>
 			</li>		
 			<li>
 				<ul>
-					<li><h3>Тип жилья</h3></li>
-					<li>Гостиница</li>
-					<li>Мотель</li>
-					<li>Апартаменты</li>
+					<li><h3 class="visually-hidden">Тип жилья</h3></li>
+					<li class="filter-option filter-checkbox">Гостиница</li>
+					<input class="visually-hidden filter-input-checkbox" type="checkbox" name="Гостиница" checked>
+					
+					<li class="filter-option filter-checkbox">Мотель</li>
+					<input class="visually-hidden filter-input-checkbox" type="checkbox" name="Мотель" checked>
+					
+					<li class="filter-option filter-checkbox">Апартаменты</li>
+					<input class="visually-hidden filter-input-checkbox" type="checkbox" name="Апартаменты" checked>
 				</ul>
 			</li>
 			<li>
@@ -53,7 +75,7 @@
 	</section>	
 	
 	<!-- found hotels - список найденных гостиниц -->		
-	<section>	
+	<section class="catalog"
 		<div>
 			Найдено: 3
 			Сортировка
@@ -66,83 +88,99 @@
 			Стрелка вниз
 		</div>
 		
-		<ul>	
+		<ul class="catalog-list">	
 		
-			<li>
+			<li class="catalog-item">
+				<p class="catalog-item-image"></p>
 				<p><img src="img/hotel1.jpg" width="135" height="90" alt="Отель1"></p>
 				<p>
-					Amala Resort & Spa
+					<span class="catalog-item-title">Amala Resort & Spa</span>
 					<span>****</span>
 				</p>
 				<p>
-					Гостиница
+					<span class="catalog-category">Гостиница</span>
+					<p class="catalog-item-price">
 					от 4000 р.
 				</p>
 				<p>
-					<button type="button">Подробнее</button>
-					<button type="button">Забронировать</button>
+					<button class="button" type="button">Подробнее</button>
+					<button class="button" type="button">Забронировать</button>
 					Рейтинг: 8,5
 				</p>
 			</li>
 		
 			<li>
-				<img src="img/hotel2.jpg" width="135" height="90" alt="Отель2">				
+				<p class="catalog-item-image"></p>
+				<p><img src="img/hotel2.jpg" width="135" height="90" alt="Отель2"></p>				
 				<p>
-					Desert Quail Inn
+					<span class="catalog-item-title">Desert Quail Inn</span>
 					<span>***</span>
 				</p>
 				<p>
-					Мотель
+					<span class="catalog-category">Мотель</span>
+					<p class="catalog-item-price">
 					от 3000 р.
 				</p>
 				<p>
-					<button type="button">Подробнее</button>
-					<button type="button">Забронировать</button>
+					<button class="button" type="button">Подробнее</button>
+					<button class="button" type="button">Забронировать</button>
 					Рейтинг: 8,9
 				</p>
 			</li>		
 		
 			<li>
-				<img src="img/hotel3.jpg" width="135" height="90" alt="Отель3">
+				<p class="catalog-item-image"></p>
+				<p><img src="img/hotel3.jpg" width="135" height="90" alt="Отель3"></p>
 				<p>
-					Villas At Poco Diablo
+					<span class="catalog-item-title">Villas At Poco Diablo</span>
 					<span>**</span>
 				</p>
 				<p>
-					Апартаменты
+					<span class="catalog-category">Апартаменты</span>
+					<p class="catalog-item-price">
 					от 2000 р.
 				</p>
 				<p>
-					<button type="button">Подробнее</button>
-					<button type="button">Забронировать</button>
+					<button class="button"type="button">Подробнее</button>
+					<button class="button"type="button">Забронировать</button>
 					Рейтинг: 9,2
 				</p>
 			</li>		
 		</ul>
 	</section>
+  </main>
 	
-	<footer>
-		#Visitsedona
-		<p>
-			<a href="tel:+74956660166">Тel:+7(495)666-01-66</a>
-		</p>	
+  <footer class="page footer main footer">
+		<section class="contacts">
+			<p>#Visitsedona
+				<br><a class="contacts" href="tel:+74956660166">Тел:+7(495)666-01-66</a>
+			</p>			
+		</section>
 		
-		<ul>
-			<li>
-				<a href="#">Twitter</a>
-			</li>
-			<li>
-				<a href="#">FaceBook</a>
-			</li>
-			<li>
-				<a href="#">Youtube</a>
-			</li>
-		</ul>		
+		<div class="social">
+			<ul class='social-list'>
+				<li>
+					<div class='social-box'>
+						<a class="social-button" href="#" alt='Twitter'></a>
+					</div>
+				</li>
+				<li>
+					<div class='social-box'>
+						<a class="social-button" href="#" alt='Facebook'></a>
+					</div>
+				</li>
+				<li>
+					<div class='social-box'>
+						<a class="social-button" href="#" alt='Youtube'></a>
+					</div>
+				</li>
+			</ul>
+		</div>
 		
-		<p>
-			Website by:
-			<a href="https://htmlacademy.ru">Html Academy</a>
+		<p >
+			<span class="copyright">Website by:</span>
+			<a class="button" href="https://htmlacademy.ru">Htmlacademy</a>
 		</p>
-	</footer>	
+	</footer>
   </body>
 </html>

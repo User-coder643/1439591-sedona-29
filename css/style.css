@@ -1,66 +1,17 @@
-/* cyrillic-ext */
 @font-face {
-  font-family: 'PT Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: local('PT Sans'), local('PTSans-Regular'), url(https://fonts.gstatic.com/s/ptsans/v12/jizaRExUiTo99u79D0-ExdGM.woff2) format('woff2');
-  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+font-family: "PT Sans";
+src: url("../fonts/ptsans.woff2") format("woff2"),
+url("../fonts/ptsans.woff") format("woff");
+font-weight: normal;
+font-style: normal;
 }
-/* cyrillic */
+
 @font-face {
-  font-family: 'PT Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: local('PT Sans'), local('PTSans-Regular'), url(https://fonts.gstatic.com/s/ptsans/v12/jizaRExUiTo99u79D0aExdGM.woff2) format('woff2');
-  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'PT Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: local('PT Sans'), local('PTSans-Regular'), url(https://fonts.gstatic.com/s/ptsans/v12/jizaRExUiTo99u79D0yExdGM.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'PT Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: local('PT Sans'), local('PTSans-Regular'), url(https://fonts.gstatic.com/s/ptsans/v12/jizaRExUiTo99u79D0KExQ.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* cyrillic-ext */
-@font-face {
-  font-family: 'PT Sans';
-  font-style: normal;
-  font-weight: 700;
-  src: local('PT Sans Bold'), local('PTSans-Bold'), url(https://fonts.gstatic.com/s/ptsans/v12/jizfRExUiTo99u79B_mh0OOtLQ0Z.woff2) format('woff2');
-  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-}
-/* cyrillic */
-@font-face {
-  font-family: 'PT Sans';
-  font-style: normal;
-  font-weight: 700;
-  src: local('PT Sans Bold'), local('PTSans-Bold'), url(https://fonts.gstatic.com/s/ptsans/v12/jizfRExUiTo99u79B_mh0OqtLQ0Z.woff2) format('woff2');
-  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'PT Sans';
-  font-style: normal;
-  font-weight: 700;
-  src: local('PT Sans Bold'), local('PTSans-Bold'), url(https://fonts.gstatic.com/s/ptsans/v12/jizfRExUiTo99u79B_mh0OCtLQ0Z.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'PT Sans';
-  font-style: normal;
-  font-weight: 700;
-  src: local('PT Sans Bold'), local('PTSans-Bold'), url(https://fonts.gstatic.com/s/ptsans/v12/jizfRExUiTo99u79B_mh0O6tLQ.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+font-family: "PT Sans";
+src: url("../fonts/ptsansbold.woff2") format("woff2"),
+url("../fonts/ptsansbold.woff") format("woff");
+font-weight: 700;
+font-style: normal;
 }
 
 /* Осуществить разделение блоков комментариями для облегчения выполнения,
@@ -71,14 +22,18 @@
   --basic-black: #000000;
   --basic-gray:  #333333;
   --basic-blue:  #81B3D2;
+  --middle-blue: #669EC0; 
+  --dark-blue:   #5496BD;
   --basic-white: #ffffff;
   --basic-light-gray: #EEEEEE;
+  
+  --hover-blue: #81B3D2;
 }
 
 .page-body {
-	font-family: "PT Sans";
-  	color: var(--basic-black);
-  	text-transform: uppercase;
+	font-family: "PT Sans", "Arial", sans-serif;
+	color: var(--basic-black);
+	text-transform: uppercase;
 	line-height: 1.5;
 }
 
@@ -89,7 +44,7 @@ a {
 .main-navigation {
 }
 
-nav {
+.nav {
 }
 .container {
 }
@@ -113,13 +68,24 @@ ul {
 .site-navigation {
 }
 
+.nav-selected a {
+	color: inherit;	
+	opacity: 0.3;	
+}
 .site-navigation a {
   	font-size: 14px;
-  	/*line-height: 26px;*/
 	color: inherit;
   	background-color: transparent;
 	font-weight: 700;	
 }
+.site-navigation a:hover {
+	color: var(--hover-blue);
+}
+.site-navigation a:active {
+	color: inherit;	
+	opacity: 0.3;
+}
+
 .site-title {
   	font-size: 21px;
   	line-height: 1.2; /*26px;*/
@@ -239,6 +205,17 @@ ul {
 	letter-spacing: 0px;
 	color: inherit;
 }
+.social-box {
+	width: 46px;
+	height: 48px;
+	background-color: var(--basic-blue);
+}
+.social-box:hover {
+	background-color: var(--middle-blue);
+}
+.social-box:active {
+	background-color: var(--dark-blue);
+}
 .copyright{
 	font-size: 14px;
 	font-style: normal;
@@ -246,4 +223,12 @@ ul {
 	line-height: 1.5; /*26px;*/
 	letter-spacing: 0px;
 	text-align: center;
+}
+.social {
+	width:143px;
+	height: 48px;
+}
+.social-list {
+	display: flex;
+	justify-content: space-between;
 }
