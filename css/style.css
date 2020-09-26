@@ -44,6 +44,10 @@ font-style: normal;
 	line-height: 1.5;
 }
 
+.visually-hodden {
+	visibility: hidden; 
+}
+
 a {
   	text-decoration: none;
 }
@@ -287,10 +291,17 @@ ul {
 	opacity: 0.3;
 	text-decoration: underline;
 }
+.sort-by-selected {
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 1.5; 	
+	color: var(--basic-blue);
+}
 .hotel-name {
 	font-weight: bold;
 	font-size: 21px;
 	line-height: 1.2; /*26px;*/
+	color: inherit;
 }
 .hotel-name:hover {
 	color: var(--basic-blue);
@@ -320,6 +331,7 @@ ul {
 	background-color: var(--basic-blue);
 	width: 110px;
 	height: 27px;
+	text-transform: inherit;
 }
 .hotel-booking {
 	font-family: "PT Sans", "Arial", sans-serif;
@@ -330,6 +342,7 @@ ul {
 	background-color: var(--light-brown);
 	width: 142px;
 	height: 27px;
+	text-transform: inherit;
 }
 .rating {
 	font-weight: normal;
