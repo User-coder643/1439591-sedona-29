@@ -170,7 +170,8 @@ ul {
 }
 
 .reason345-box {
-	background-color: var(--basic-light-gray);		height: 256px;	
+	background-color: var(--basic-light-gray);		
+	height: 256px;	
 	width:  400px;
 	text-align: center;	
 }
@@ -245,7 +246,7 @@ ul {
 	justify-content: space-between;
 }
 .filters {
-	background-image: url('../img/filterbackground.jpg');
+	background-image: url('../img/filter-background.jpg');
 	background-size: 100%;
 }
 .filter-group-caption {
@@ -289,7 +290,8 @@ ul {
 	font-size: 12px;
 	line-height: 1.5;  /*18px;*/
 	opacity: 0.3;
-	text-decoration: underline;
+    text-decoration: none;
+    border-bottom: 1px dotted #81B3D2;	
 }
 .sort-by-selected {
 	font-weight: 400;
@@ -369,7 +371,6 @@ ul {
 	text-decoration: none;
 	opacity: 1;	
 }
-
 .hotel-details:hover {
 	background-color: var(--middle-blue);	
 }
