@@ -109,7 +109,7 @@ ul {
     grid-template-columns: 1fr 1fr 1fr; 
 	list-style: none;
     padding: 0; /* Убираем поля */
-    margin-left: 0px; /* Отступ слева */
+    margin-left: 0; /* Отступ слева */
 	margin-top: 0; /* Отступ сверху */
     margin-bottom: 0; /* Отступ снизу */	
 }
@@ -151,7 +151,7 @@ ul {
 }
 
 .features-list {
-  	
+	
 }
 
 .feature-item {
@@ -488,7 +488,6 @@ ul {
 	display: grid;
 	grid-template-columns: 400px 400px 400px;	
 	grid-template-rows: 256px 256px 256px 256px;	
-	
 }
 .reason1-pict {
 	grid-column: 2 / span 2;
