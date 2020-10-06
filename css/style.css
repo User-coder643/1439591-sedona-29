@@ -86,7 +86,7 @@ a {
 }
 .hotel-descr-container {
 	display: grid;
-	grid-template-columns: 125px 125px;	
+	grid-template-columns: 125px 142px;	
 	grid-template-rows: 25px 25px 25px;
 }
 
