@@ -37,6 +37,9 @@ font-style: normal;
   --dark-brown: #503E33;
 }
 
+body {
+	margin: 0px;	
+}
 .page-body {
 	align-content: start;
 	min-height: 100%;
@@ -45,16 +48,46 @@ font-style: normal;
 	text-transform: uppercase;
 	line-height: 1.5;
 	height: 100%; 
+	padding-top: 0px;
+	
 }
-
+/*
 .main-header {
 	margin-bottom: 70px;
 	outline-offset: -5px;
+}
+*/
+/*
+.navigation	{		
+    display:				flex;			
+    flex-direction:			row;	
+    font-weight:			bold;	
+    background-color:		white;	
+}	
+
+.navigation	ul {		
+    display:				flex;			
+    flex-direction:			row;		
+    justify-content: 		space-around;		
+    padding: 				15px;
+    line-height:			30px;	
+    width: 					100%;	
+}	
+*/
+/*
+.logo {
+    width: 				138px;		
+}
+*/
+.logo a {
+    position: 			absolute;
+    top: 				0px;		
 }
 
 .site-navigation {
 	display: flex;
 	justify-content: space-around;
+	padding: 15px;  
 }
 
 .main-header-logo {
@@ -64,6 +97,7 @@ font-style: normal;
 
 .visually-hidden {
 	visibility: hidden; 
+	height: 0px;
 }
 
 a {
@@ -110,6 +144,9 @@ ul {
     margin-bottom: 0; /* Отступ снизу */
 }
 
+li {
+	text-align: center;	
+}
 .suggest-list {
 	display: grid;
     grid-template-columns: 1fr 1fr 1fr; 
@@ -145,6 +182,8 @@ ul {
   	font-size: 21px;
   	line-height: 1.2; 
   	font-weight: 700;
+	padding-top: 40px;
+	padding-bottom: 40px;
 	padding-left: 300px;
 	padding-right: 300px;
 }
@@ -153,7 +192,7 @@ ul {
   	font-size: 14px;
   	font-weight: 400;
   	color: var(--basic-gray);
-	padding-bottom : 20px;
+	padding-bottom : 40px;
 }
 
 .features-list {
@@ -333,8 +372,10 @@ ul {
 	color: var(--basic-white);	
 }
 .sorting {
-	padding-left: 80px;
-	text-align: left;
+	padding: 40px; 
+    padding-left: 70px;	
+	padding-bottom: 20px;
+	text-align: left;   
 }
 .sorting .arrow {
 	float: right;	
@@ -482,4 +523,18 @@ ul {
 .reason2-pict {
 	grid-column: 1 / span 2;
 	grid-row: 3;
+}
+
+.star-container {
+	height: 17px;
+	background-image: url(../img/star.svg);   /* width="18" height="17" alt="Star">  */
+}	
+.stars4 {
+    width:				75px;
+}
+.stars3 {
+    width:				55px;
+}
+.stars2 {
+    width:				35px;
 }
