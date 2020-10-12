@@ -40,6 +40,20 @@ font-style: normal;
 body {
 	margin: 0px;	
 }
+.big-pict {
+	height:   509px;
+	background: url(../img/sedona.jpg); 
+	background-size: 1200px 509px; 
+	position: relative;
+}
+.big-pict-dec {
+    position: absolute; 
+	margin: auto; 
+	left: 0; 
+	top: 95px; 
+	bottom: 0; 
+	right: 0;	
+}
 .page-body {
 	align-content: start;
 	min-height: 100%;
@@ -51,62 +65,26 @@ body {
 	padding-top: 0px;
 	
 }
-/*
-.main-header {
-	margin-bottom: 70px;
-	outline-offset: -5px;
-}
-*/
-/*
-.navigation	{		
-    display:				flex;			
-    flex-direction:			row;	
-    font-weight:			bold;	
-    background-color:		white;	
-}	
-
-.navigation	ul {		
-    display:				flex;			
-    flex-direction:			row;		
-    justify-content: 		space-around;		
-    padding: 				15px;
-    line-height:			30px;	
-    width: 					100%;	
-}	
-*/
-/*
-.logo {
-    width: 				138px;		
-}
-*/
 .logo a {
-    position: 			absolute;
-    top: 				0px;		
+    position: 	absolute;
+    top: 		0px;	
 }
-
 .site-navigation {
 	display: flex;
 	justify-content: space-around;
-	padding: 15px;  
+	padding: 	15px;
 }
-
 .main-header-logo {
 	order: 1;
 	outline-offset: -5px;
 }
-
 .visually-hidden {
 	visibility: hidden; 
 	height: 0px;
 }
-
 a {
   	text-decoration: none;
 }
-
-.nav {
-}
-
 .main-container {
 	width: 1200px;
 	margin-left: auto;
@@ -194,11 +172,6 @@ li {
   	color: var(--basic-gray);
 	padding-bottom : 40px;
 }
-
-.features-list {
-	
-}
-
 .reason-container {
 	display: grid; 
 	grid-template-columns: 1fr 1fr 1fr;
@@ -216,17 +189,17 @@ li {
 .reason345-box.reason12-box {
 	color: inherit;
     background-color: var(--basic-light-gray);	
-}
-			
+}			
 .reason1-features {
 	padding: 30px;
 	text-align: center;
 	background-color: white;
 }
-
 .footer-container {
 	display: flex;
-	justify-content: space-between;	
+	justify-content: space-around;	
+	padding-top: 30px;
+    padding-bottom: 30px; 
 }
 .reason12-box {
   	color:            var(--basic-white);	
@@ -251,7 +224,6 @@ li {
 	padding-left: 40px;
 	padding-right: 40px;	
 }
-
 .reason12-box-text {
 	font-size: 14px;
 	font-style: normal;
@@ -261,9 +233,6 @@ li {
 	padding-bottom: 20px;
 	padding-left: 80px;
 	padding-right: 80px;		
-}
-.suggest-item {
-	
 }
 .suggest-box {
 	color:            var(--basic-black);	
@@ -310,6 +279,7 @@ li {
 	text-align: center;
 	padding-left: 400px;
 	padding-right:400px;
+	padding-bottom: 20px;
 }
 .contacts,
 .contacts a {
@@ -323,9 +293,10 @@ li {
 }
 .social-box {
 	width: 46px;
-	height: 48px;
+/*	height: 48px;  */
 	background-color: var(--basic-blue);
-	margin: 0 1px;
+	margin: 0 3px;
+    padding-top: 15px;
 }
 .social-box:hover {
 	background-color: var(--middle-blue);
@@ -494,14 +465,14 @@ li {
 }
 .find-hotel-button {
 	padding: 30px;
-	padding-left: 90px;
-	padding-right: 90px;
 	background-color: var(--light-brown);
 	font-size: 21px;
 	line-height: 1.2;  /*26px;*/
 	color: var(--basic-white);
 	font-weight: 700;
 	text-transform: inherit;
+    margin-left: 340px;
+	margin-right: 340px;
 }
 .find-hotel-button:hover {
 	background-color: var(--middle-brown);
@@ -510,7 +481,6 @@ li {
 	background-color: var(--dark-brown);
 	color: var(--basic-silver);
 }
-
 .five-reason-container{
 	display: grid;
 	grid-template-columns: 400px 400px 400px;	
@@ -524,10 +494,9 @@ li {
 	grid-column: 1 / span 2;
 	grid-row: 3;
 }
-
 .star-container {
 	height: 17px;
-	background-image: url(../img/star.svg);   /* width="18" height="17" alt="Star">  */
+	background-image: url(../img/star.svg);  
 }	
 .stars4 {
     width:				75px;
