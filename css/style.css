@@ -39,11 +39,25 @@ font-style: normal;
 
 body {
 	margin: 0px;	
+	background-color: var(--basic-silver);
+}
+
+.main-header {
+}
+.logo {
+	position: absolute;
+	top: 0px;
+	left:50%; 
+	margin-left:-50px;
+	z-index:1000;
 }
 .big-pict {
 	height:   509px;
-	background: url(../img/sedona.jpg); 
-	background-size: 1200px 509px; 
+	background: 
+		        url(../img/welcome.svg) center no-repeat,
+		        url(../img/shape.svg)   bottom no-repeat,
+				url(../img/sedona.jpg)  50% no-repeat; 
+/*	background-size: 1200px 509px auto;  */     
 	position: relative;
 }
 .big-pict-dec {
@@ -62,16 +76,11 @@ body {
 	text-transform: uppercase;
 	line-height: 1.5;
 	height: 100%; 
-	padding-top: 0px;
-	
-}
-.logo a {
-    position: 	absolute;
-    top: 		0px;	
+	padding-top: 0px;	
 }
 .site-navigation {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-evenly;
 	padding: 	15px;
 }
 .main-header-logo {
@@ -89,7 +98,8 @@ a {
 	width: 1200px;
 	margin-left: auto;
 	margin-right: auto;
-	text-align: center;  
+	text-align: center;
+	background-color: var(--basic-white);
 }
 .filter-container {
 	display: grid;
