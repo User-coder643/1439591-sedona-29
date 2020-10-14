@@ -22,11 +22,14 @@ font-style: normal;
   --basic-black: #000000;
   --basic-white: #ffffff;  
   --basic-silver: silver; 
+  --basic-light-silver: #888888; 
+
   --basic-light-gray: #EEEEEE;    
   
   --light-gray:  #f2f2f2;
   --basic-gray:  #333333;
   --middle-gray: #666666;
+
   
   --basic-blue:  #81B3D2;
   --middle-blue: #669EC0; 
@@ -39,7 +42,7 @@ font-style: normal;
 
 body {
 	margin: 0px;	
-	background-color: var(--basic-silver);
+	background-color: #888888;
 }
 
 .main-header {
@@ -108,6 +111,9 @@ a {
 .filter-box {
 	padding: 20px;
 	padding-left: 80px;
+	text-align: left;
+}
+.filter-box li {
 	text-align: left;
 }
 .hotel-container {
@@ -359,8 +365,32 @@ li {
 	text-align: left;   
 }
 .sorting .arrow {
-	float: right;	
-	padding: 10px;
+	float: 		right;	
+	padding: 	2px;
+	width:		15px; 
+	height:		41px; 		
+	background-repeat:		no-repeat;
+}
+.sorting .arrow.up {
+	background-image: 	url(../img/arrow-up-gray.png);   
+}	
+.sorting .arrow.down {
+	background-image: 	url(../img/arrow-down-gray.png);   
+}
+.sorting .arrow.up:hover {
+	background-image: 	url(../img/arrow-up-black.png);   
+}	
+.sorting .arrow.down:hover {
+	background-image: 	url(../img/arrow-down-black.png);   
+}
+.sorting .arrow.up:active {
+	background-image: 	url(../img/arrow-up-blue.png);   
+}	
+.sorting .arrow.down:active {
+	background-image: 	url(../img/arrow-down-blue.png);   
+}
+.sorting .arrow.down.act {
+	background-image: 	url(../img/arrow-down-blue.png);   
 }
 .hotels {
 	padding: 40px;
@@ -516,4 +546,15 @@ li {
 }
 .stars2 {
     width:				35px;
+}
+.simbol-academy {
+	background-image: 	url(../img/simbol-academy-black.png);
+	width:				115px; 
+	height:				41px; 
+}
+.simbol-academy:hover {
+	background-image: 	url(../img/simbol-academy-blue.png);
+}
+.simbol-academy:active {
+	background-image: 	url(../img/simbol-academy-gray.png);
 }
