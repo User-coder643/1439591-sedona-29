@@ -18,10 +18,10 @@ font-style: normal;
 чтоб не запутаться во множестве блоков*/
 
 /* Variables */
-:root {
+:root {	
   --basic-black: #000000;
   --basic-white: #ffffff;  
-  --basic-silver: silver; 
+  --basic-silver: #CACACA; 
   --basic-light-silver: #888888; 
 
   --basic-light-gray: #EEEEEE;    
@@ -103,6 +103,7 @@ a {
 	margin-right: auto;
 	text-align: center;
 	background-color: var(--basic-white);
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 .filter-container {
 	display: grid;
@@ -364,33 +365,21 @@ li {
 	padding-bottom: 20px;
 	text-align: left;   
 }
-.sorting .arrow {
+.sorting svg {
 	float: 		right;	
-	padding: 	2px;
-	width:		15px; 
-	height:		41px; 		
-	background-repeat:		no-repeat;
+	padding: 	2px;	
 }
-.sorting .arrow.up {
-	background-image: 	url(../img/arrow-up-gray.png);   
-}	
-.sorting .arrow.down {
-	background-image: 	url(../img/arrow-down-gray.png);   
+.sorting svg .arrow {
+	fill: var(--basic-silver);
 }
-.sorting .arrow.up:hover {
-	background-image: 	url(../img/arrow-up-black.png);   
-}	
-.sorting .arrow.down:hover {
-	background-image: 	url(../img/arrow-down-black.png);   
+.sorting svg .arrow:hover {
+	fill: var(--basic-black);
 }
-.sorting .arrow.up:active {
-	background-image: 	url(../img/arrow-up-blue.png);   
-}	
-.sorting .arrow.down:active {
-	background-image: 	url(../img/arrow-down-blue.png);   
+.sorting svg .arrow:active {
+	fill: var(--basic-blue);
 }
-.sorting .arrow.down.act {
-	background-image: 	url(../img/arrow-down-blue.png);   
+.sorting svg .arrow.action {
+	fill: var(--basic-blue);
 }
 .hotels {
 	padding: 40px;
@@ -456,6 +445,9 @@ li {
 	color: var(--basic-white);
 	background-color: var(--basic-blue);
 	text-transform: inherit;
+    border: 0;
+    padding: 0;	
+	outline: none;
 }
 .hotel-booking {
 	font-family: "PT Sans", "Arial", sans-serif;
@@ -465,6 +457,9 @@ li {
 	color: var(--basic-white);
 	background-color: var(--light-brown);
 	text-transform: inherit;
+    border: 0;
+    padding: 0;	
+	outline: none;
 }
 .rating {
 	font-weight: normal;
@@ -475,7 +470,7 @@ li {
 }
 .sort-by:hover {
 	color: var(--basic-blue);
-	text-decoration: underline;
+	text-decoration: none;
 	opacity: 1;	
 }
 .sort-by:active {
@@ -483,6 +478,7 @@ li {
 	font-weight: 400;
 	opacity: 1;
 	text-decoration: none;
+	border-bottom: none;	
 }
 .sort-by:focus {
 	color: var(--basic-blue);
