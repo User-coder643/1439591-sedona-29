@@ -25,8 +25,7 @@
 			</nav>
 		</header>  
 
-		<div class="big-pict">	</div>		
-		
+		<div class="big-pict"></div>		
 		
 		<section class="features">	
 			
@@ -106,20 +105,49 @@
 		</section>	
 	
 		<section class="appointment">
+			
 			<h2 class="visually-hidden"> appointment </h2>
 			<p  class="app-title"> Заинтересовались? </p>
 			<p  class="appointment-info">
 				Укажите предполагаемые даты поездки,
 				И мы покажем вам лучшие предложения гостиниц в Седоне.
 			</p>
+				
+			<button class="find-hotel-button">Поиск гостиницы в Седоне</button> 
 			
-			<!-- <button type="button" class="find-hotel-button">Поиск гостиницы в Седоне</button>   -->
-			
-			<div class="find-hotel-button">Поиск гостиницы в Седоне</div> 
-			
-			<img src="img/map.jpg" width="1199" height="594" alt="Карта Седоны">
+			<div class="btm" style="background-image: url(img/map.jpg); width: 1199px; height: 594px; background-size: cover;" >
+
+			<form method="post" action="#">
+				<div class="date-input">
+					<label for="datein">Дата заезда</label>
+					<input  id="datein" type="text"  value="24 апреля 2017">
+					<input type="button" class="date">	
+				</div>
+				<div class="date-input">
+					<label for="dateout">Дата выезда</label>
+					<input id="dateout" type="text" value="4 июля 2017"> 
+					<input type="button" class="date">		
+				</div>
+				
+				<div class="passengers">
+					<div>
+						<label for="Adult">Взрослые</label>
+						<input class="plus-minus" type="button" value="-">
+						<input class="quantity" id="howAdult" type="text" placeholder="2">
+						<input class="plus-minus" type="button" value="+">
+					</div>
+					<div>
+						<label for="Children">Дети</label>
+						<input class="plus-minus" type="button" value="-">
+						<input class="quantity" id="howChildren" type="text" placeholder="0">
+						<input class="plus-minus" type="button" value="+">
+					</div>
+				</div>	
+				<button class="search-button" type="submit">Найти</button>
+			</form>						
+			</div>		
 		</section>	
-	
+		
 		<footer class="footer-container">
 			
 			<div class="contacts">
@@ -142,11 +170,8 @@
 			</div>			
 			
 			<div class="academy-link-container">
-				<div class="copyright">Website by:</div>			
-				<a href="https://htmlacademy.ru">
-					<!-- <img class="simbol-academy" src="img/simbol-academy-black.png" width="115" height="41" alt="Символ Академии"> -->
-					<div class="simbol-academy"></div>
-				</a>
+				<div class="copyright">Website by</div>			
+				<a class="simbol-academy" href="https://htmlacademy.ru"> </a>
 			</div>
 			
 		</footer>
