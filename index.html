@@ -115,32 +115,32 @@
 				
 			<button class="find-hotel-button">Поиск гостиницы в Седоне</button> 
 			
-			<div class="btm" style="background-image: url(img/map.jpg); width: 1199px; height: 594px; background-size: cover;" >
+			<div class="btn" style="background-image: url(img/map.jpg); width: 1199px; height: 594px; background-size: cover;">
 
 			<form method="post" action="#">
 				<div class="date-input">
 					<label for="datein">Дата заезда</label>
 					<input  id="datein" type="text"  value="24 апреля 2017">
-					<input type="button" class="date">	
+					<button class="calend-button" type="button"></button>
 				</div>
 				<div class="date-input">
 					<label for="dateout">Дата выезда</label>
 					<input id="dateout" type="text" value="4 июля 2017"> 
-					<input type="button" class="date">		
+					<button class="calend-button" type="button"></button>
 				</div>
 				
 				<div class="passengers">
 					<div>
-						<label for="Adult">Взрослые</label>
-						<input class="plus-minus" type="button" value="-">
-						<input class="quantity" id="howAdult" type="text" placeholder="2">
-						<input class="plus-minus" type="button" value="+">
+						<label for="howadult">Взрослые</label>
+						<button class="minus-button" type="button">-</button>
+						<input class="quantity" id="howadult" type="text" value="2">
+						<button class="plus-button" type="button">+</button>
 					</div>
 					<div>
-						<label for="Children">Дети</label>
-						<input class="plus-minus" type="button" value="-">
-						<input class="quantity" id="howChildren" type="text" placeholder="0">
-						<input class="plus-minus" type="button" value="+">
+						<label for="howchildren">Дети</label>
+						<button class="minus-button" type="button">-</button>
+						<input class="quantity" id="howchildren" type="text" value="0">
+						<button class="plus-button" type="button">+</button>
 					</div>
 				</div>	
 				<button class="search-button" type="submit">Найти</button>

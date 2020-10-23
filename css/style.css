@@ -23,14 +23,14 @@ font-style: normal;
   --basic-white: #ffffff;  
   --basic-silver: #CACACA; 
   --basic-light-silver: #888888; 
-
-  --basic-light-gray: #EEEEEE;    
-  
+ 
+  --basic-light-gray: #EEEEEE; 
+ 
+ --middle-light-gray: #A9A9A9;
   --light-gray:  #f2f2f2;
   --basic-gray:  #333333;
   --middle-gray: #666666;
 
-  
   --basic-blue:  #81B3D2;
   --middle-blue: #669EC0; 
   --dark-blue:   #5496BD;
@@ -44,15 +44,14 @@ body {
 	margin: 0px;	
 	background-color: #f2f2f2;
 }
-
 .main-header {
 }
 .logo {
 	position: absolute;
 	top: 0px;
 	left:50%; 
-	margin-left:-50px;
-	z-index:1000;
+	margin-left: -50px;
+	z-index: 1000;
 }
 .big-pict {
 	background: 
@@ -529,7 +528,7 @@ li {
 	background-color: var(--dark-brown);
 	color: var(--basic-silver);
 }
-.five-reason-container{
+.five-reason-container { 
 	display: grid;
 	grid-template-columns: 400px 400px 400px;	
 	grid-template-rows: 256px 256px 256px 256px;	
@@ -553,13 +552,13 @@ li {
 	margin-left: auto;	
 }
 .stars4 {	
-    width:				75px;
+    width:	75px;
 }
 .stars3 {
-    width:				55px;
+    width:	55px;
 }
 .stars2 {
-    width:				35px;
+    width:	35px;
 }
 .simbol-academy {
 	background-image: 	url(../img/simbol-academy-black.png);
@@ -572,7 +571,6 @@ li {
 .simbol-academy:active {
 	background-image: 	url(../img/simbol-academy-gray.png);
 }
-
 	form {
 		background-color: white; 
 		margin-left: 350px; 
@@ -581,40 +579,69 @@ li {
 		line-height: 26px; 
 		font-weight: 700;	 
 		padding: 40px;
+		align-items: center;
 	}
 	input {
-		display:			inline-block; 	
-		margin:				0;
-		padding:			0;
+		display:			inline-block; 
+		padding-left: 		10px;
+		padding-right: 		10px;
 		height:				34px;		
 		text-transform:		uppercase;		
 		background-color:	#f2f2f2;		
 		width:				250px;	
-		border:				none;	
+		border:				none;
+		font-style: normal;
+		font-weight: bold;
 	}
-	.date {
-		display: 			inline-block; 
+	.calend-button {
+		display:            inline-block;
 		height: 			34px; 
 		width:				34px; 
-		background:			url('../img/calendar.svg');	
-		background-color: 	#f2f2f2; 		
+		background-image:	url('../img/calendar.svg');	
+	 	background-color: 	#f2f2f2;
 		background-repeat: 	no-repeat;
 		background-position:center; 		
 		vertical-align: 	bottom; 
 		margin-left:		-4px;
-	}	
+	}
+	
+	.calend-button:hover {	
+		background-color: #000000;
+		position: absolute;
+	}
+	.calend-button:active {
+		background-color: #81B3D2;
+		position: absolute;
+	}
+	
 	.quantity {
 		width:				32px;
-		text-align: 		center; 		
+		text-align: 		center; 
+		font-style: normal;
+		font-weight: bold;
 	}	
 	.date-input {
 		text-align: left;
-		margin-bottom:				20px;  
+		margin-bottom: 20px; 
+	}
+	.date-input:hover {
+		font-weight: bold;
+	}
+	
+	.date-input:focus {
+		font-weight: bold;
+		display: flex;
+		align-items: flex-end;
+		color: #000000;
+		background-color: #FFFFFF;
+		border: 2px solid #E5E5E5;
+		box-sizing: border-box;
 	}
     label {
         width: 200px;
     }
-	.plus-minus	{
+
+	.minus-button {
 		font-size:			18px;
 		font-weight:		bold;		
 		width:				32px;
@@ -622,25 +649,50 @@ li {
 		background-color:	#f2f2f2;
 		color:				#a9a9a9;		
 	}	
+	.minus-button:hover {	
+		background: #000000;
+		position: absolute;
+	}
+	.minus-button:active {
+		background: #81B3D2;
+		position: absolute;
+	}
+
+	.plus-button {
+		font-size:			18px;
+		font-weight:		bold;		
+		width:				32px;
+		height:				32px;
+		background-color:	#f2f2f2;
+		color:				#a9a9a9;		
+	}	
+	.plus-button:hover {	
+		background: #A9A9A9;
+		transform: rotate(-90deg);
+	}
+	.plus-button:active {
+		background: #A9A9A9;
+		transform: rotate(-90deg);
+	}
+	
     .passengers {
         display: flex;
 		justify-content: space-around;
 		margin-bottom: 30px;
     }
 	.search-button {
-/*		padding-top: 10px;
-		padding-bottom: 10px;
-*/	
-		padding-right: 30px;
-		padding-left:  30px;   	
-		
+		width: 458px;
+		height: 58px;
 		background-color: var(--basic-blue);
-		font-size: 21px;
-		line-height: 1.2;
 		color: var(--basic-white);
+		text-transform: inherit; 
+		font-size: 21px;
 		font-weight: 700;
-		text-transform: inherit;
-	
-/*		margin-bottom: 30px;   */ 
-		text-transform: inherit;
+		line-height: 1.2;
+		box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
+		padding-right: 30px;
+		padding-left:  30px; 
+		margin-bottom: 30px;
+		left: 356px;
+		top: 2083px;
 	}
